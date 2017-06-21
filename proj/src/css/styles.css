@@ -1,0 +1,35 @@
+.display_all
+{
+    display: table-row;
+}
+
+.display_all_clients
+{
+    display: table-cell;
+}
+
+.display_all_machines
+{
+    display: table-cell;
+}
+
+.new_client
+{
+    display: table-row;
+}
+
+.client_info
+{
+    padding:0px 20px;
+    display: table-cell;
+}
+
+.add_client_form
+{
+    display: none;
+}
+
+.add_machine_form
+{
+    display: none;
+}

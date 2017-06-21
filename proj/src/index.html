@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server</title>
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    <script type="text/javascript" src="/scripts/script.js"></script>
+    
+</head>
+<body>
+    <div id="addClientForm" class="add_client_form">
+        <input id="nameClientForm" placeholder="Name">
+        <input id="aliasClientForm" placeholder="Alias">
+        <input id="emailClientForm" placeholder="E-mail">
+        <input id="passClientForm" type="password" placeholder="Password">
+        <input id="langClientForm" placeholder="Language">
+        <input id="numCustLicClientForm" placeholder="Number customer license">
+        <input id="numProjLicClientForm" placeholder="Number_project_license">
+        <input id="licExpDateClientForm" placeholder="License expiry date">
+        <button id="btnAddClientForm" onclick="AddClient()">Add</button>
+    </div>
+
+    <div id="addMachineForm" class="add_machine_form">
+        <input id="nameMachineForm" placeholder="Name">
+        <input id="ipMachineForm" placeholder="IP">
+        <input id="descMachineForm" placeholder="Description">
+        <button id="btnAddMachineForm" onclick="AddMachine()">Add</button>
+    </div>
+
+    <button onclick="OpenAddClientForm()">Add Client</button>
+    <button onclick="OpenAddMachineForm()">Add Machine</button>
+    <div id="displayAll" class="display_all">
+        <div id="displayAllClients" class="display_all_clients">
+        </div>
+        <div id="displayAllMachines" class="display_all_machines">
+        </div>
+    </div>
+    </div>
+</body>
+<script>
+    DisplayClients();
+    DisplayMachines();
+</script>
+</html>
